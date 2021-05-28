@@ -3,8 +3,8 @@ CURSOR=">>="
 RESET="\[$(tput sgr0)\]"
 
 # palette (a)
-ON="210"
-#ON="12"
+# ON="210"
+ON="244"
 OFF="15"
 FG_ON="\[$(tput setaf $ON)\]"
 BG_ON="\[$(tput setab $ON)\]"
