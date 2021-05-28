@@ -5,6 +5,7 @@ dotfiles_public="\
 .emacs.d/init.el .emacs.d/init-config/ .emacs.d/snippets/ \
 .gitconfig .git-commit-template.txt \
 .gnuplot .gnuplot.d/config/ \
+.tex_templates/base.sty .tex_templates/template.tex \
 .xmonad/xmonad.hs .xmonad/xmobar.hs "
 
 # private dotfiles (not to be shared)
