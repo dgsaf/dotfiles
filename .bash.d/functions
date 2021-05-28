@@ -1,9 +1,0 @@
-# copy common tex style package and template to current directory
-tex_template () {
-
-
-    cp ~/Dropbox/university/base.sty ./
-    cp ~/Dropbox/university/template.tex ./$1.tex
-}
-
-export tex_template

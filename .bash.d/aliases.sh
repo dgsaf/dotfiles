@@ -1,7 +1,6 @@
 alias ls='ls --color=never'
 
 alias magnus='ssh -Y tross@magnus.pawsey.org.au'
-alias raijin='ssh -Y tmr573@raigin.nci.org.au'
 alias zeus='ssh -Y tross@zeus.pawsey.org.au'
 alias topaz='ssh -Y tross@topaz.pawsey.org.au'
 
