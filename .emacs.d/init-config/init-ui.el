@@ -2,15 +2,14 @@
 
 (require 'init-theme)
 
-(use-package fill-column-indicator
-  :ensure t
-  :init
-  (progn
-    (add-hook 'prog-mode-hook #'fci-mode)
-    (setq
-     fci-rule-column 80
-     fci-rule-width 5
-     fci-rule-color fg-colour)))
+;; (use-package fill-column-indicator
+;;   :ensure t
+;;   :init
+;;   (progn
+;;     (add-hook 'prog-mode-hook #'fci-mode)
+;;     (setq
+;;      fci-rule-column 80
+;;      fci-rule-width 5)))
 
 (use-package highlight-numbers
   :ensure t
@@ -21,32 +20,15 @@
 (use-package hl-line
   :ensure t
   :init
-  (global-hl-line-mode)
-  :config
-  (progn
-    (set-face-attribute
-     hl-line-face nil
-     :inherit nil
-     :background line-colour)))
+  (global-hl-line-mode))
 
 ;; (use-package hl-sexp
 ;;   :ensure t
 ;;   :init
-;;   (global-hl-sexp-mode)
-;;   :config
-;;   (progn
-;;     (set-face-attribute
-;;      'hl-sexp-face nil
-;;      :background sexp-colour)))
+;;   (global-hl-sexp-mode)))
 
 (use-package smart-mode-line
-  :ensure t
-  :config
-  (progn
-    (set-face-attribute
-     'mode-line nil
-     :foreground fg-colour
-     :background bg-colour)))
+  :ensure t)
 
 (use-package smartparens
   :ensure t
@@ -58,8 +40,7 @@
   (progn
     (sp-pair "'" nil :actions :rem)
     (set-face-attribute
-     'sp-show-pair-match-face nil
-     :background paren-colour)))
+     'sp-show-pair-match-face nil)))
 
 (use-package volatile-highlights
   :ensure t

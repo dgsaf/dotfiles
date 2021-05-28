@@ -2,7 +2,7 @@
 dotfiles_public="\
 .bash.d/ .bash_profile \
 .config/zathura/zathurarc \
-.emacs.d/init.el .emacs.d/init-config/ .emacs.d/snippets/ \
+.emacs.d/init.el .emacs.d/init-config/ .emacs.d/snippets/ .emacs.d/themes/ \
 .gitconfig .git-commit-template.txt \
 .gnuplot .gnuplot.d/config/ \
 .tex_templates/base.sty .tex_templates/template.tex \
