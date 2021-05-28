@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: forall
+# key: forall
+# expand-env: ((yas/indent-line 'fixed))
+# --
+forall ($1)$0
+end forall

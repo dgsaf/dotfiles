@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: subroutine
+# key: subroutine
+# expand-env: ((yas/indent-line 'fixed))
+# --
+subroutine $2 ($3)$0
+end subroutine $2

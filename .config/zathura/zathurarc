@@ -1,0 +1,50 @@
+set adjust-open best-fit
+
+set selection-clipboard clipboard
+
+set highlight-transparency 0.1
+set highlight-color "#2a4d69"
+
+set font "fira mono 10&"
+
+set default-bg "#ffffff"
+set default-fg "#000000"
+
+set statusbar-bg "#2a4d69"
+set statusbar-fg "#ffffff"
+
+set inputbar-bg "#2a4d69"
+set inputbar-fg "#ffffff"
+
+set notification-error-bg "#2a4d69"
+set notification-error-fg "#ffffff"
+
+set notification-warning-bg "#2a4d69"
+set notification-warning-fg "#ffffff"
+
+set completion-highlight-bg "#2a4d69"
+set completion-highlight-fg "#ffffff"
+
+map \< goto top
+map \> goto bottom
+map b navigate previous
+map e follow
+map f navigate next
+map p goto top
+
+map <C-+> zoom in
+map <C--> zoom out
+map <C-=> zoom in
+map <C-)> adjust_window best-fit
+map <C-0> adjust_window width
+map <C-a> scroll full-left
+map <C-b> scroll left
+map <C-e> scroll full-right
+map <C-f> scroll right
+map <C-g> abort
+map <C-n> scroll down
+map <C-p> scroll up
+map <C-v> scroll full-down
+map <A-\<> goto top
+map <A-\>> goto bottom
+map <A-v> scroll full-up

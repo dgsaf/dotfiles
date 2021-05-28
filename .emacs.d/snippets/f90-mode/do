@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: do
+# key: do
+# expand-env: ((yas/indent-line 'fixed))
+# --
+do $1 = $2, $3, ${4:1}$0
+end do

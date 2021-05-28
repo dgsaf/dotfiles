@@ -1,0 +1,18 @@
+[user]
+  name = Tom Ross
+  email = tom.ross@protonmail.com
+
+[github]
+  user = dgsaf
+
+[core]
+  editor = emacs -nw
+
+[color]
+  status = auto
+  branch = auto
+  interactive = auto
+  diff = auto
+
+[commit]
+  template = ~/.git-commit-template.txt

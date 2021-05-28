@@ -1,0 +1,20 @@
+
+# [TYPE] Subject line (< 50 characters, no period)
+
+# More detailed explanatory text.
+# Wrap at 72 characters.
+
+# Some additional notes.
+# Use imperative mood in subject line.
+# Suggest [TYPE] categories may be:
+# - INITIAL
+# - ADD
+# - UPDATE
+# - DEBUG
+# - REFACTOR
+# - FIX
+# - TEST
+# - STYLE
+# - BUILD
+# - WIP
+# - REMOVE

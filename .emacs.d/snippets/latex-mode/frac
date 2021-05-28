@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: fraction
+# key: frac
+# expand-env: ((yas/indent-line 'fixed))
+# --
+\frac
+{$0
+}
+{
+
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: lr parentheses
+# key: lr
+# expand-env: ((yas/indent-line 'fixed))
+# --
+\lr[${1:*}]
+{$0
+}
