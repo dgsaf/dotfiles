@@ -29,68 +29,15 @@
      (warning-fg fg)
      (warning-1 "yellow")
      (warning-2 "orange")
-     (warning-3 "red")
-
-     ;; default
-     (main-fg fg)
-     (main-bg bg)
-
-     ;; font-lock
-     (builtin-fg fl-entity)
-     (comment-fg fl-fade)
-     (constant-fg fl-constant)
-     (function-fg fl-entity)
-     (keyword-fg fl-keyword)
-     (preprocessor-fg fl-preprocessor)
-     (string-fg fl-constant)
-     (type-fg fl-keyword)
-     (variable-name-fg fl-entity)
-
-     ;; company
-     (common-fg accent)
-     (company-fg fg)
-     (company-bg bg-lighter-2)
-     (scrollbar-fg accent)
-     (scrollbar-bg bg-lighter-1)
-     (selection-bg bg-lighter-1)
-
-     ;; flymake / flyspell
-     (warning-fg fg)
-     (warning-bg-minor warning-1)
-     (warning-bg warning-2)
-     (warning-bg-major warning-3)
-
-     ;; hl-line
-     (hl-bg bg-lighter-2)
-
-     ;; ido
-     (directory-fg accent)
-
-     ;; isearch
-     (search-fg fg)
-     (search-bg highlight-bg-1)
-     (search-highlight-bg highlight-bg-2)
-
-     ;; match
-
-     ;; mode-line
-     (mode-line-fg bg-darker-2)
-     (mode-line-bg fg)
-
-     ;; region
-
-     ;; show-paren / smart-parens
-     (sp-fg bg)
-     (sp-pair-bg accent)
-     (sp-over-bg accent))
+     (warning-3 "red"))
   (custom-theme-set-faces
    'dgsaf-dark
 
    ;; default
    `(default
       ((,class
-        :foreground , main-fg
-        :background , main-bg)))
+        :foreground , fg
+        :background , bg)))
 
    ;; cursor
    `(cursor
@@ -100,160 +47,158 @@
    ;; font-lock
    `(font-lock-builtin-face
      ((,class
-       :foreground , builtin-fg)))
+       :foreground , fl-entity)))
    `(font-lock-comment-delimiter-face
      ((,class
-       :foreground , comment-fg)))
+       :foreground , fl-fade)))
    `(font-lock-comment-face
      ((,class
-       :foreground , comment-fg)))
+       :foreground , fl-fade)))
    `(font-lock-constant-face
      ((,class
-       :foreground , constant-fg)))
+       :foreground , fl-constant)))
    `(font-lock-doc-face
      ((,class
-       :foreground , comment-fg)))
+       :foreground , fl-fade)))
    `(font-lock-function-name-face
      ((,class
-       :foreground , function-fg)))
+       :foreground , fl-entity)))
    `(font-lock-keyword-face
      ((,class
-       :foreground , keyword-fg)))
+       :foreground , fl-keyword)))
    `(font-lock-preprocessor-face
      ((,class
-       :foreground , preprocessor-fg)))
+       :foreground , fl-preprocessor)))
    `(font-lock-string-face
      ((,class
-       :foreground , string-fg)))
+       :foreground , fl-constant)))
    `(font-lock-type-face
      ((,class
-       :foreground , type-fg)))
+       :foreground , fl-keyword)))
    `(font-lock-variable-name-face
      ((,class
-       :foreground , variable-name-fg)))
+       :foreground , fl-entity)))
 
    ;; company
    `(company-scrollbar-bg
      ((,class
-       :background , scrollbar-bg)))
+       :background , bg-lighter-1)))
    `(company-scrollbar-fg
      ((,class
-       :background , scrollbar-fg)))
+       :background , accent)))
    `(company-tooltip
      ((,class
-       :foreground , company-fg
-       :background , company-bg)))
+       :foreground , fg
+       :background , bg-lighter-2)))
    `(company-tooltip-common
      ((,class
-       :foreground , common-fg)))
+       :foreground , accent)))
    `(company-tooltip-selection
      ((,class
-       :background , selection-bg)))
+       :background , bg-lighter-1)))
 
    ;; flymake
    `(flymake-error
      ((,class
        :foreground , warning-fg
-       :background , warning-bg-major)))
+       :background , warning-3)))
    `(flymake-note
      ((,class
        :foreground , warning-fg
-       :background , warning-bg-minor)))
+       :background , warning-1)))
    `(flymake-warning
      ((,class
        :foreground , warning-fg
-       :background , warning-bg)))
+       :background , warning-2)))
 
    ;; flyspell
    `(flyspell-duplicate
      ((,class
        :foreground , warning-fg
-       :background , warning-bg)))
+       :background , warning-2)))
    `(flyspell-incorrect
      ((,class
        :foreground , warning-fg
-       :background , warning-bg-major)))
+       :background , warning-3)))
 
    ;; highlight
    `(highlight
      ((,class
-       :foreground , main-bg
-       :background , main-fg)))
+       :foreground , bg
+       :background , fg)))
 
    ;; hl-line
    `(hl-line
      ((,class
-       :background , hl-bg)))
+       :background , bg-lighter-2)))
 
    ;; ido
    `(ido-first-match
      ((,class
-       :foreground , main-fg)))
+       :foreground , fg)))
    `(ido-only-match
      ((,class
-       :foreground , main-fg)))
+       :foreground , fg)))
    `(ido-subdir
      ((,class
-       :foreground , directory-fg)))
+       :foreground , accent)))
 
    ;; isearch
    `(isearch
      ((,class
-       :foreground , search-fg
-       :background , search-bg)))
+       :foreground , fg
+       :background , highlight-bg-1)))
    `(isearch-fail
      ((,class
-       :foreground , search-bg
-       :background , search-fg)))
+       :foreground , highlight-bg-1
+       :background , fg)))
    `(lazy-highlight
      ((,class
-       :foreground , search-fg
-       :background , search-highlight-bg)))
+       :foreground , fg
+       :background , highlight-bg-2)))
 
    ;; match
    `(isearch
      ((,class
-       :foreground , search-fg
-       :background , search-bg)))
+       :foreground , fg
+       :background , highlight-bg-1)))
 
    ;; minibuffer-prompt
    `(minibuffer-prompt
      ((,class
-       :foreground , main-fg)))
+       :foreground , fg)))
 
    ;; mode-line
    `(mode-line
      ((,class
-       :foreground , mode-line-fg
-       :background , mode-line-bg)))
+       :foreground , bg-darker-2
+       :background , fg)))
    `(mode-line-inactive
      ((,class
-       :foreground , mode-line-bg
-       :background , mode-line-fg)))
+       :foreground , fg
+       :background , bg-darker-2)))
 
    ;; region
    `(region
      ((,class
-       :foreground , main-bg
-       :background , main-fg)))
+       :foreground , bg
+       :background , fg)))
 
    ;; show-paren
    `(show-paren-match
      ((,class
-       :foreground , sp-fg
-       :background , sp-pair-bg)))
+       :foreground , bg
+       :background , accent)))
    `(show-paren-mismatch
      ((,class
        :foreground , warning-fg
-       :background , warning-bg)))
+       :background , warning-2)))
 
    ;; smart-parens
    `(sp-pair-overlay-face
      ((,class
-       :foreground , sp-fg
-       :background , sp-over-bg)))
-   )
-  )
+       :foreground , bg
+       :background , accent)))))
 
 (provide-theme 'dgsaf-dark)
 
