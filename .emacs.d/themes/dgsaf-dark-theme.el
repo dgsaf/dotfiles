@@ -80,6 +80,13 @@
        :foreground , fl-entity)))
 
    ;; company
+   `(company-preview
+     ((,class
+       :foreground , fg
+       :background , bg-lighter-2)))
+   `(company-preview-common
+     ((,class
+       :foreground , fl-fade)))
    `(company-scrollbar-bg
      ((,class
        :background , bg-lighter-1)))
@@ -177,6 +184,13 @@
      ((,class
        :foreground , fg
        :background , bg-darker-2)))
+
+   ;; link
+   `(link
+     ((,class
+       :foreground , fg
+       :background , bg-darker-2)))
+
 
    ;; region
    `(region

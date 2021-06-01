@@ -1,4 +1,4 @@
-alias ls='ls --color=never'
+alias ls='ls --color=never --indicator-style=slash'
 
 alias magnus='ssh -Y tross@magnus.pawsey.org.au'
 alias zeus='ssh -Y tross@zeus.pawsey.org.au'
