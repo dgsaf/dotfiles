@@ -1,20 +1,17 @@
 
-# [TYPE] Subject line (< 50 characters, no period)
-
-# More detailed explanatory text.
+# [TYPE] Subject line (< 50 chars, no period)
+#
+# More detailed explanatory text, in bullet points
 # Wrap at 72 characters.
-
-# Some additional notes.
-# Use imperative mood in subject line.
 # Suggest [TYPE] categories may be:
-# - INITIAL
-# - ADD
-# - UPDATE
-# - DEBUG
-# - REFACTOR
-# - FIX
-# - TEST
-# - STYLE
-# - BUILD
-# - WIP
-# - REMOVE
+# - INI (initial)
+# - ADD (add)
+# - UPD (update)
+# - DBG (debug)
+# - REF (refactor)
+# - FIX (fix)
+# - TES (test)
+# - STY (style)
+# - BLD (build)
+# - WIP (work-in-progress)
+# - REM (remove)

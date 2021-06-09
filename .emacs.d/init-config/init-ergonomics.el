@@ -10,6 +10,7 @@
  indent-tabs-mode nil
  indent-line-function 'insert-tab
  tab-width 2
+ sh-basic-offset 2
  colon-double-space nil)
 
 (setq-default
